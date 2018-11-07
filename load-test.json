@@ -1,0 +1,39 @@
+{
+  "config": {
+    "target": "",
+    "phases": [
+      {
+       "duration": 30,
+       "arrivalRate": 10
+      },
+      {
+        "duration": 30,
+        "arrivalRate": 20
+      },
+      {
+        "duration": 30,
+        "arrivalRate": 30
+      }
+    ],
+    "processor" : "./load-test-create-grocerylist.js"
+  },
+  "scenarios": [
+    {
+      "name": "Create Grocery List",
+      "flow": [
+        {
+          "function": "create"
+        },
+        {
+          "post": {
+            "url": "http://localhost:3000/api/grocery-list",
+            "json": {
+              "title": "{{ title }}",
+              "content": "{{ content }}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
