@@ -11,7 +11,7 @@
 ### Load Test Setup
 - Fork this repository: https://github.com/jlhiskey/load-testing.git
 - Clone this repository onto your local device.
-- Run <sudo ./node_modules/artillery/bin/artillery run simple-load-test.json> to start your server.
+- Run <sudo ./node_modules/artillery/bin/artillery run simple-load-test.json> to conduct load test.
 - Artillery will run and give you a report.
 
 ## Author 
