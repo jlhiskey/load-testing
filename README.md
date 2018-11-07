@@ -6,11 +6,13 @@
 ### Back End Setup
 - Fork this repository: https://github.com/jlhiskey/11-14-express-api.git
 - Clone this repository onto your local device.
+- Run </npm i> to install dependencies.
 - Run </npm run dbOn> to start your local database.
 - Run </npm run start-server> to start your local server.
 ### Load Test Setup
 - Fork this repository: https://github.com/jlhiskey/load-testing.git
 - Clone this repository onto your local device.
+- Run </npm i> to install dependencies.
 - Run <sudo ./node_modules/artillery/bin/artillery run simple-load-test.json> to conduct load test.
 - Artillery will run and give you a report.
 
